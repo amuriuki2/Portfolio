@@ -4,28 +4,29 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    max-width: 100vw;
 }
 
 header {
-    padding: 20px 20px;
+    padding: 0px 10px 10px 10px;
     background: #eee;
     border-top: 1px #000 solid;
     background:#00000;
-    height:60px;
+    height:40px;
     z-index:170;
     border-bottom:1px solid #dadada;
     position:fixed;
     top:0;
     left:0;
     right:0;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* LOGO */
 #logo {
     float: left;
     font-family: 'Reggae One', cursive;
-    font-size: 44px;
+    font-size: 30px;
 }
 #logo a {
     text-decoration: none;
@@ -34,7 +35,7 @@ header {
 
 /* NAVIGATION BAR */
 .nav-bar {
-    margin-top: 18px;
+    margin-top: 12px;
     float: right;
 }
 
@@ -48,9 +49,16 @@ header {
 
 .nav-bar a {
     color: #111;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     padding: 5px 10px;
+}
+
+.nav-bar a:hover {
+    color: #fff;
+    background: #444;
+    /* padding: 8px 15px; */
+    border-radius: 5px;
 }
 
 /* HOME DIVISION*/
@@ -84,7 +92,7 @@ header {
 
 /* ABOUT DIVISION*/
 #about-container {
-    height: 300px;
+    height: 300px; max-width: 100%;
     padding: 20px;
     position: relative;
     background-color: rgb(192, 191, 189);
@@ -105,7 +113,6 @@ header {
 
 .about-content {
     float: right;
-    width: 950px;
     margin-left: 25%;
     padding: 20px;
     position: absolute;
@@ -126,6 +133,7 @@ header {
 /* SKILLS DIVISION */
 #skills-container {
   /* background-image: url("../images/skills-bg-img.jpg") linear-gradient(rgba(0, 0, 0, 0.5)); */
+  /* max-height: 100vh; */
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/skills-bg-img.jpg');
   background-position: center;
   background-size: cover;
@@ -156,11 +164,11 @@ header {
 
 .skills-box {
     position: relative;
-    width: 400px;
+    width: 350px;
     display: inline-block;
-    padding: 40px; margin-left: 10px;
+    padding: 40px; margin-left: 10px; margin-bottom: 10px;
     color: rgb(189, 188, 186);
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     background-position: center;
     background-size: cover;
@@ -172,7 +180,105 @@ header {
 }
 
 .skills-box:hover {
-    width: 500px;
-    font-size: 25px;
-    margin: 40px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* CONTACT FORM */
+
+#contact-container {
+    position: relative;
+    padding: 0 0 50px 0;
+    display: block;
+    height: 550px; max-width: 100%;
+    background: linear-gradient(rgb(80, 78, 68),rgb(68, 66, 66)));
+}
+
+#contact-container form {
+    position: absolute;
+    display: block;
+    /* margin: 10px; */
+    padding: 15px;
+    width: 350px;
+    background: #eee;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+form fieldset {
+    border: none;
+}
+
+form label {
+    display: block;
+    padding: 10px;
+}
+
+form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+form textarea {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form input[type=submit] {
+    margin-top: 5px;
+    padding: 5px;
+    width: 30%;
+}
+
+form input[type=submit]:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* FOOTER */
+
+footer {
+    height: 100px;
+    background: grey;
+    padding: 10px 10px 0 10px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content p {
+    padding-bottom: 2px;
+}
+
+.nav-bar-footer {
+    margin: 10px;
+}
+
+.nav-bar-footer ul {
+    list-style-type: none;
+}
+
+.nav-bar-footer li {
+    display: inline-block;
+}
+
+.nav-bar-footer a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: underline;
+    padding: 5px 10px;
+}
+
+.nav-bar-footer a:hover {
+    color: #fff;
+    background: #555;
+    /* padding: 8px 15px; */
+    border-radius: 5px;
+}
+
+#powered {
+    font-style: italic;
 }
