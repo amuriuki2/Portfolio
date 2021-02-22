@@ -165,13 +165,13 @@ header {
 }
 
 .skills-box img {
-    width: 350px; max-height: 196px;
+    width: 320px; max-height: 196px;
     border-radius: 20px;
 }
 
 .skills-button {
     margin-top: 15px;
-    margin-left: 32%;
+    margin-left: 28%;
 }
 
 .skills-button a {
