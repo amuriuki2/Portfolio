@@ -218,7 +218,7 @@ header {
 
 #contact-container {
     position: relative;
-    padding: 50px 50px 0px 150px;
+    padding: 50px 50px 0px 200px;
     display: block;
     height: 500px; max-width: 100%;
     background: rgb(192, 191, 189);
@@ -278,7 +278,7 @@ form input[type=submit]:hover {
 
 .contact-info {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 70px;
     top: 70%;
     transform: translate(0, -30%);
 }
